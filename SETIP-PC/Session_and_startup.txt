@@ -1,0 +1,2 @@
+gnome-terminal -- /home/pi/scripts/mount_Video_Photo_Books_Music.sh
+gnome-terminal -- /home/pi/Desktop/scripts/retropie/mount_ROM_MOUNT_gamelists_artwork_collections.sh
