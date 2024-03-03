@@ -3,5 +3,6 @@ Themes are located at:
 
 ---------------------------------------------------------------------
 To display the corect system ART for different MAME emulators:
+mame , advanded mame , mame libretro
 copy file es_systems.cfg to:
 /etc/emulationstation/
