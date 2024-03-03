@@ -8,4 +8,4 @@ Examples :mame , advmame , mame-libretro
 
 copy file: **es_systems.cfg** to:
 
-/etc/emulationstation/
+***/etc/emulationstation/***
