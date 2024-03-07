@@ -1,32 +1,60 @@
-# ArcadeConfig
-Collection of scripts and config files for arcade
+# ArcadeConfig  
 
+Collection of scripts and config files for arcade  
 
-## USB Game Drive
+## USB Game Drive  
+The USB drive must have a Label set to:
 
-Add these files to the direcory below. \
-autostart.sh  \
-mount_roms_extra_gamelists_artwork.sh
+>  ROM_EXTRA
+
+It must contain the folders:  
+
+- BIOS  
+- collections  
+- downloaded_images  
+- gameslists  
+- roms
+
+The contents of these folders are identical to  
+the corresponding folders in the retropie folders:  
+
+- /home/pi/RetroPie/BIOS  
+- /opt/retropie/configs/all/emulationstation/collections  
+- /opt/retropie/configs/all/emulationstation/downloaded_images  
+- /home/$USER/.emulationstation/gamelists  
+- /home/$USER/RetroPie/roms  
+
+## Map USB Game Drive
+
+Add these files:  
+
+- autostart.sh  
+- mount_roms_extra_gamelists_artwork.sh  
+
+ to the direcory below.  
 
 > \opt\retropie\configs
 
-## Game Collections 
+This scripts will ensure that the USB is mapped to the
+folders on retropie.
 
- custom-Golden80s.cfg \
- custom-Hits 70s.cfg \
- custom-Hits 80s Cloned.cfg <br>
- custom-Hits 80s Original.cfg \
- custom-LightGun.cfg  \
- custom-Mario.cfg  \
- custom-N64DEMO.cfg  \
- custom-Pinball.cfg  \
- custom-Players Two.cfg  \
- custom-SYSTEMTEST-ARCADE.cfg  \
- custom-SYSTEMTEST-GAMEPAD.cfg  \
- custom-SYSTEMTEST-KEYBOARD.cfg  \
- custom-Tanks.cfg  <br>
+## Game Collections  
 
-Add these collections to directory: 
+ * custom-Golden80s.cfg  
+ * custom-Hits 70s.cfg  
+ * custom-Hits 80s Cloned.cfg  
+ * custom-Hits 80s Original.cfg  
+ * custom-LightGun.cfg  
+ * custom-Mario.cfg  
+ * custom-N64DEMO.cfg  
+ * custom-Pinball.cfg  
+ * custom-Players Two.cfg  
+ * custom-SYSTEMTEST-ARCADE.cfg  
+ * custom-SYSTEMTEST-GAMEPAD.cfg  
+ * custom-SYSTEMTEST-KEYBOARD.cfg  
+ * custom-Tanks.cfg  
+
+Add these collections to directory:  
 
 > \home\pi\emulationstation\collections
 
@@ -39,3 +67,22 @@ Add these files to the direcory below.
 
 
 >  \etc\emulationstation\themes
+
+## PIXEL Desktop
+
+After the PIXEL desktop has been instaled the following  
+are recomended applications:  
+
+### qjoypad:
+sudo apt-get update -y  
+sudo apt-get install -y qjoypad  
+
+### jstest:
+sudo apt-get install jstest-gtk  
+
+
+
+
+
+
+
