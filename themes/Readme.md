@@ -15,3 +15,7 @@ Different MAME emulators: mame , advmame , mame-libretro
 copy file: **es_systems.cfg** to:
 
 ***/etc/emulationstation/***
+
+Or open a terminal and execute:
+
+*** sudo wget -P /etc/emulationstation https://github.com/pestami/ArcadeConfig/blob/main/themes/es_systems.cfg ***
