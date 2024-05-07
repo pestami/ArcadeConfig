@@ -51,39 +51,35 @@ sudo mount -t vfat $ROM_DEVICE /home/$USER/ROMS_EXTRA -o rw,uid=$USERID,gid=$GRO
 #mastersystems megadrive sg-1000 nes snes gba gc ports 
 #TurboGrafX c64.zxspectrum psp psx n64 nds
 #=========================================================
-for rom_folder in atari2600 atari5200 atari7800 arcade mame-libretro mame-mame4all neogeo mastersystems megadrive sg-1000 nes snes gba gc ports c64 zxspectrum psx nds
-do 
 	echo $rom_folder
-	
 	echo --------------------------------------------------------------------
 	echo ----Mounting ROMS $rom_folder --------------------------------------
-	mkdir /home/$USER/RetroPie/roms/$rom_folder
-	sudo umount /home/$USER/RetroPie/roms/$rom_folder
-	sudo mount -o bind /home/$USER/ROMS_EXTRA/roms/$rom_folder /home/$USER/RetroPie/roms/$rom_folder
+	mkdir /home/$USER/RetroPie/roms
+	sudo umount /home/$USER/RetroPie/roms
+	sudo mount -o bind /home/$USER/ROMS_EXTRA/roms /home/$USER/RetroPie/roms
 	
 	echo --------------------------------------------------------------------
 	echo ----Mounting images $rom_folder ------------------------------------
 	mkdir /home/$USER/ROMS_EXTRA/downloaded_images
 	mkdir /opt/retropie/configs/all/emulationstation/downloaded_images
-	mkdir /opt/retropie/configs/all/emulationstation/downloaded_images/$rom_folder
-	sudo umount /opt/retropie/configs/all/emulationstation/downloaded_images/$rom_folder
-	sudo mount -o bind /home/$USER/ROMS_EXTRA/downloaded_images/$rom_folder /opt/retropie/configs/all/emulationstation/downloaded_images/$rom_folder
+	sudo umount /opt/retropie/configs/all/emulationstation/downloaded_images
+	sudo mount -o bind /home/$USER/ROMS_EXTRA/downloaded_images /opt/retropie/configs/all/emulationstation/downloaded_images
 	echo --------------------------------------------------------------------
 	echo ----Mounting gamelists $rom_folder ---------------------------------
-	mkdir /media/$USER/ROM_EXTRA/gameslists/$rom_folder
-	mkdir /home/$USER/.emulationstation/gamelists/$rom_folder
-	sudo umount /opt/retropie/configs/all/emulationstation/gamelists/$rom_folder
-	sudo mount -o bind /home/$USER/ROMS_EXTRA/gameslists/$rom_folder /opt/retropie/configs/all/emulationstation/gamelists/$rom_folder
+	mkdir /media/$USER/ROM_EXTRA/gameslists
+	mkdir /home/$USER/.emulationstation/gamelists
+	sudo umount /opt/retropie/configs/all/emulationstation/gamelists
+	sudo mount -o bind /home/$USER/ROMS_EXTRA/gameslists /opt/retropie/configs/all/emulationstation/gamelists
 	echo ---------------------------------------------------------------------
-done
+
 #=========================================================
 echo =====================================================
 	echo --------------------------------------------------------------------
 	echo ----Mounting collections $rom_folder ------------------------------------
-sudo mount -o bind /home/$USER/ROMS_EXTRA/collections /opt/retropie/configs/all/emulationstation/collections
+    sudo mount -o bind /home/$USER/ROMS_EXTRA/collections /opt/retropie/configs/all/emulationstation/collections
 	echo --------------------------------------------------------------------
 	echo ----Mounting BIOS $rom_folder ------------------------------------
-sudo mount -o bind /home/$USER/ROMS_EXTRA/BIOS /home/pi/RetroPie/BIOS
+    sudo mount -o bind /home/$USER/ROMS_EXTRA/BIOS /home/pi/RetroPie/BIOS
 echo =====================================================
 echo =====================================================
 echo GAMES RETROPIE
