@@ -35,7 +35,9 @@ Add these files:
 
 > \opt\retropie\configs\all
 
-Ensure marked as executable !
+Ensure marked as executable ! 
+chmod +x mount_roms_extra_gamelists_artwork.sh  
+chmod +x autostart.sh  
 
 This scripts will ensure that the USB is mapped to the
 folders on retropie.
