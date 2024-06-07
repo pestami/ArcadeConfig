@@ -1,2 +1,2 @@
-/opt/retropie/configs/all/mount_roms_extra_gamelists_artwork.sh
+/opt/retropie/configs/all/mount_roms_extra.sh
 emulationstation #auto
