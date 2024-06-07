@@ -6,19 +6,23 @@ echo 2023/03/17 - installed onMintPC corrected errors
 echo 2024/01/04 - games artwork.gameslists.collections only on USB deive 
 #=========================================================
 #!/bin/bash
-while true; do
+
     read -p "Do you wish to mount the ROMS_EXTRA USB Drive ?" yesno
+ 
     case $yesno in
         [Yy]* ) 
             echo "ROMS_EXTRA USB will be mapped"
+            
         ;;
         [Nn]* ) 
             echo "ROMS_EXTRA USB will NOT be mapped"
             exit 1
         ;;
-        * ) echo "Answer either yes or no!";;
+        * ) echo "ROMS_EXTRA USB will NOT be mapped"
+            exit 1
+        ;;
     esac
-done
+
 
 #=========================================================
 
