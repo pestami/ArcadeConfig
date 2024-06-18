@@ -8,7 +8,7 @@ Layout File directory:
 
 /home/.qjoypad3/
 
-![GameControlerLayout.png](GameControlerLayout.png)
+![JoystickLayout.png](JoystickLayout.png)
 
 
 
