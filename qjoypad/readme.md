@@ -3,9 +3,11 @@
 INSTALL QJoypad:
 
 sudo apt-get update -y
+
 sudo apt-get install -y qjoypad
 
 INSTALL jstest:
+
 sudo apt-get install jstest-gtk
 
 ---------------------------------------------------
