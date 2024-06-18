@@ -6,8 +6,15 @@ Layout directory:
 
 Layout File directory:
 
-/home/pi/.qjoypad3/
+/home/.qjoypad3/
+
+![GameControlerLayout.png](GameControlerLayout.png)
 
 
 
-GameControlerLayout.png
+qjoypad:
+sudo apt-get update -y
+sudo apt-get install -y qjoypad
+
+jstest:
+sudo apt-get install jstest-gtk
