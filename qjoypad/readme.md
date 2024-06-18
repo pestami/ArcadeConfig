@@ -1,5 +1,12 @@
 ### QJoypad ###
 
+==INSTALL:==.
+sudo apt-get update -y
+sudo apt-get install -y qjoypad
+
+jstest:
+sudo apt-get install jstest-gtk
+
 Layout directory:
 
 /home/pi/.qjoypad3/
@@ -12,9 +19,4 @@ Layout File directory:
 
 
 
-qjoypad:
-sudo apt-get update -y
-sudo apt-get install -y qjoypad
 
-jstest:
-sudo apt-get install jstest-gtk
