@@ -81,7 +81,20 @@ sudo apt-get install -y qjoypad
 sudo apt-get install jstest-gtk  
 
 
+### Rotate Monitor:
+sudo nano /boot/config.txt
 
+Add one of the following lines to the bottom of the file :
+
+display_rotate=0
+
+display_rotate=1
+
+display_rotate=2
+
+display_rotate=3
+
+0 is the normal configuration. 1 is 90 degrees. 2 is 180 degress. 3 is 270 degrees.
 
 
 
