@@ -28,9 +28,9 @@ Autostart directory:
 
 autostart
 ```
-{
+
 qjoypad
-}
+
 ``` 
 ---------------------------------------------------
 
