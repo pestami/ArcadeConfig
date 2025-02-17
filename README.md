@@ -29,7 +29,7 @@ the corresponding folders in the retropie folders:
 Add these files:  
 
 - autostart.sh  
-- mount_roms_extra_gamelists_artwork.sh  
+- mountusb.sh ~~mount_roms_extra_gamelists_artwork.sh~~
 
  to the direcory below.  
 
